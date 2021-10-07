@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+    <style>
+        *{
+            margin-left:.5em;
+        }
+        h3{
+            padding: .5em
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Dojo Survey</h3>
+    <form action="/process" method='POST'>
+
+        <div class="form-row">
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" name='name' placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form-group">
+            <label for="timezone">Time Zone</label>
+            <select multiple class="form-control" name="timezone">
+                <option>Pacific</option>
+                <option>Mountain</option>
+                <option>Central</option>
+                <option>Eastern</option>
+            </select>
+        </div>
+        <label for="timezone">Favorite Language</label>
+        <div class="form-check">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="html/css" id="favlanguage" value="option1">
+                <label class="form-check-label" for="html/css">HTML/CSS</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="python" id="favlanguage " value="option2">
+                <label class="form-check-label" for="python">Python</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="favlanguage" id="JavaScript" value="option3">
+                <label class="form-check-label" for="JavaScript">JavaScript</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="favlanguage" id="C#t" value="option4">
+                <label class="form-check-label" for="C#t">C#</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Please leave a comment!</label>
+            <textarea class="form-control" name="comment" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</body>
+
+</html>

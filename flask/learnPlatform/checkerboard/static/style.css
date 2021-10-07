@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto
+}
+.container{
+   width: 500px;
+   text-align: center;
+}
+h1{
+    color: cornflowerblue;
+    background-color: black;
+    
+    padding: 1em;
+    margin-top: .5em;
+    width: 500px;
+}
+
+.black{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+} 
+
+.blue{
+    background-color: cornflowerblue;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+} 
+
+.chessboard{
+    margin-top: 1em;
+    display: inline-block;
+    width: fit-content;
+}
